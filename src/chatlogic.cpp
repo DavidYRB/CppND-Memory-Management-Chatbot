@@ -10,7 +10,7 @@
 #include "graphnode.h"
 #include "chatbot.h"
 #include "chatlogic.h"
-
+#include <iostream>
 
 ChatLogic::ChatLogic()
 {
@@ -33,6 +33,7 @@ ChatLogic::~ChatLogic()
     ////
 
     // delete chatbot instance
+    std::cout << "Delete bot first time" << std::endl;
     delete _chatBot;
 
     // delete all nodes
