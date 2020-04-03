@@ -17,11 +17,7 @@ ChatLogic::ChatLogic()
     //// STUDENT CODE
     ////
 
-    // create instance of chatbot
-    //_chatBot = new ChatBot("../images/chatbot.png");
-
-    // add pointer to chatlogic so that chatbot answers can be passed on to the GUI
-    // _chatBot->SetChatLogicHandle(this);
+    // No need to construct anything.
 
     ////
     //// EOF STUDENT CODE
@@ -32,9 +28,7 @@ ChatLogic::~ChatLogic()
     //// STUDENT CODE
     ////
 
-    // delete chatbot instance
-    // std::cout << "Delete bot first time" << std::endl;
-    // delete _chatBot;
+    // No need to delete any member variable, since they will be take care by their onwers
 
     ////
     //// EOF STUDENT CODE

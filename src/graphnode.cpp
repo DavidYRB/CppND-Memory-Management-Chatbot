@@ -11,7 +11,8 @@ GraphNode::~GraphNode()
     //// STUDENT CODE
     ////
 
-    //delete _chatBot; 
+    // No need to delete the chatBot
+    // Make _chatBot as a stack variable so that it will be released if the GraphNode instance is out of scope or deleted.
 
     ////
     //// EOF STUDENT CODE
@@ -42,7 +43,7 @@ void GraphNode::MoveChatbotHere(ChatBot chatbot)
 
 void GraphNode::MoveChatbotToNewNode(GraphNode *newNode)
 {
-    newNode->MoveChatbotHere(_chatBot);
+    newNode->MoveChatbotHere(std::move(_chatBot));
     //_chatBot = nullptr; // invalidate pointer at source
 }
 ////

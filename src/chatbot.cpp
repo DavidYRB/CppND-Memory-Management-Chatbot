@@ -75,7 +75,7 @@ ChatBot::ChatBot(ChatBot&& source){
     _rootNode = source._rootNode;
     source._rootNode = nullptr;
     _image = source._image;
-    source._image = nullptr;
+    source._image = NULL;
 }
 
 ChatBot& ChatBot::operator=(ChatBot&& source){
@@ -87,7 +87,7 @@ ChatBot& ChatBot::operator=(ChatBot&& source){
         _rootNode = source._rootNode;
         source._rootNode = nullptr;
         _image = source._image;
-        source._image = nullptr;
+        source._image = NULL;
     }
     return *this;
 }
